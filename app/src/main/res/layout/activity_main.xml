@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#C2C8CA"
+    >
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="HTML editor"
+        android:textSize="30dp"
+        android:textColor="#252C3A"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:shadowColor="#3A416E"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+
+
+        android:layout_marginLeft="8dp"
+        />
+
+    <Button
+        android:id="@+id/btnRun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="127dp"
+        android:layout_marginRight="5dp"
+        android:backgroundTint="#C3314D51"
+        android:text="Run"
+        android:textSize="18dp"
+
+        android:onClick="Run"
+
+        />
+
+
+
+    <Button
+        android:id="@+id/btnGenerate"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="0dp"
+        android:backgroundTint="#2C2C30"
+        android:padding="0dp"
+        android:text="generate simple html"
+        android:onClick="Generate"
+        />
+
+    <EditText
+        android:id="@+id/txtHTML"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minHeight="300dp"
+        android:layout_marginTop="0dp"
+        android:padding="0dp"
+        android:background="#FC3D3D43"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:textColor="#FFFFFF" />
+
+
+</LinearLayout>
